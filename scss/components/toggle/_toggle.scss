@@ -1,0 +1,39 @@
+@use '../../abstract/colors' as *;
+
+.toggle__input {
+    appearance: none;
+    width: 9rem;
+    height: 4rem;
+    border-radius: 6rem;
+    position: relative;
+    background: $background--dark;
+    outline: 0.2rem solid #2C3333;
+
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 5rem;
+        width: 5rem;
+        background: $gradient;
+        border-radius: 50%;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        transition: 0.4s;
+        outline: 0.2rem solid #2C3333;
+    }
+
+    &:checked {
+        background: $background;
+    }
+
+    &:checked::after {
+        left: 75%;
+    }
+
+}

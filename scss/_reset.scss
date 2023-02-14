@@ -1,0 +1,15 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    min-height: 100vh;
+}
+
